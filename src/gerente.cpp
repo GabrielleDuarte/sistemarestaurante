@@ -1,31 +1,11 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 #include "gerente.hpp"
-#include "pessoa.hpp" 
 
-
-using namespace std;
-
-class gerente: public pessoa {
-private:
-    string matricula_;
-    float salario_;
-public:
-    //constructor of gerente:
-    gerente(string nome, string cpf, string tel, string matricula, float salario) : pessoa{nome, cpf, tel}, matricula_{matricula}, salario_{1.200} {};
-
-    //function of gerente
-    string showMatricula() {};
-    float showSalario() {};
+Gerente::Gerente(string nome, string id, float salario): Funcionario{nome, id} {
+	this->salario = 1,200;
 };
 
-gerente::showMatricula()
-{
-    return matricula_;
-}
-
-gerente::showSalario()
-{
-    return salario_;
-}
- 
+float Gerente::Rsalariog(){
+	return salario;
+};

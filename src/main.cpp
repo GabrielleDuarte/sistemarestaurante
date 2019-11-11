@@ -1,12 +1,13 @@
-#include<iostream>
-#include<string>
-#include "pessoa.hpp" 
+#include "funcionario.hpp"
 #include "gerente.hpp"
+#include <iostream>
+#include <fstream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    // g++ cpp/*.cpp -o main -Iinclude
-
+	Gerente a{"Tadeu", "4L3RT", 0 };
+	cout << a.Rsalariog() << endl;
 }
