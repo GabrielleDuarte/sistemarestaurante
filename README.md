@@ -13,6 +13,7 @@ Funções:
 - Editar pedido
 - Cancelar pedido
 - Fazer observações sobre o pedido
+
 (adicionar restantes)
 
 
