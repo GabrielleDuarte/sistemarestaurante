@@ -61,8 +61,23 @@ Restaurante::InitGarcon(ifstream garcon){
 
 Restaurante::InitPratos(iftream pratos)
 {
-	//definir o que acontece aq
+	pratos.open("gerente.csv");
+	//testando a abertura do arquivo:
+	if ( !pratos.is_open() )
+	{
+		cout << "Erro na abertura do arquivo.\n";
+		exit(1);
+	}
 
+	//vector to salve ger in containers:
+	vector<string> pratos;
+
+	while(pratos.good())
+	{
+		string aux;
+		getline(ger, aux , ',');
+		pratos.push_back(aux);
+	}	
 };
 
 Restaurante::InitMesa(/*assinatura aqui tbm*/){
