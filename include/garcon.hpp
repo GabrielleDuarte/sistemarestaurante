@@ -15,6 +15,7 @@ public:
 
 	//function of class Garcon
 	float Rsalariogar();
+	void IniMesa(int NdeMesa);
 
 	
 }

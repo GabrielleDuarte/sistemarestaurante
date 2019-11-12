@@ -1,9 +1,14 @@
+#include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 #include "pratos.hpp"
 #include "funcionarios.hpp"
 #include "gerente.hpp"
 #include "garcon.hpp"
+#include "mesa.hpp"
+#include "pedido.hpp"
+#include "restaurante.hpp"
 
 using namespace std;
 
@@ -46,4 +51,19 @@ Restaurante::InitPratos(iftream pratos)
 {
 	//definir o que acontece aq
 
+};
+
+Restaurante::InitMesa(/*assinatura aqui tbm*/){
+	Vector<Mesa> ativas[6];
+
+
+
+};
+
+Restaurante::InitPedido(/*assinatura aqui tbm*/){
+	
+};
+
+Restaurante::InitHistorico(ofstream historico_do_dia, vector<Pedido> pedidos){
+	
 };

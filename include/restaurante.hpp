@@ -1,6 +1,8 @@
 #ifndef _RESTAURANTE_H
 #define _RESTAURANTE_H
 
+//atualizar o cpp de restaurante
+
 #include <fstream>
 #include <string>
 #include "pratos.hpp"
@@ -19,14 +21,14 @@ public:
 
 	// funções de inicialização de funcionario, pratos e historico de vendas diario
 	void InitGerente(ifstream gerente);
-	void InitGarcon(ifstream garcon);
+	void InitGarcon(ifstream garcon);	
 	void InitPratos(iftream pratos);
+	//void InitPedido();
+	//void InitMesa();
 	//void InitHistorico(ifstream historico);
 	
 	//função que retorna o nome do restaurante:
 	string Rnomer();
-
-	//função para devolver historico de vendas diário:
 
 };
 
