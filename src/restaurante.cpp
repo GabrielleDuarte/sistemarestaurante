@@ -19,7 +19,6 @@ Restaurante::Restaurante(){
 Restaurante::InitGerente(ifstream ger){
 	//abrindo o arquivo de funcionarios:
 	ger.open("gerente.csv");
-
 	//testando a abertura do arquivo:
 	if ( !ger.is_open() )
 	{
@@ -27,25 +26,38 @@ Restaurante::InitGerente(ifstream ger){
 		exit(1);
 	}
 
-	//variaveis aux:
-	string aux;
-	int i;
-	
+	//vector to salve ger in containers:
+	vector<string> gerentes;
+
 	while(ger.good())
 	{
-		getline(ger, aux , ',')
-		{
-			//não sei como fazer pra mandar pro constructor;
-		}
-	}
-		
-
+		string aux;
+		getline(ger, aux , ',');
+		ger.push_back(aux);
+	}	
 }
 
 
 Restaurante::InitGarcon(ifstream garcon){
-	//definir o q acontece aq
-}
+	garcon.open("gerente.csv");
+	//testando a abertura do arquivo:
+	if ( !garcon.is_open() )
+	{
+		cout << "Erro na abertura do arquivo.\n";
+		exit(1);
+	}
+
+	//vector to salve ger in containers:
+	vector<string> garcon;
+
+	while(garcon.good())
+	{
+		string aux;
+		getline(ger, aux , ',');
+		garcon.push_back(aux);
+	}	
+
+};	
 
 Restaurante::InitPratos(iftream pratos)
 {
@@ -54,7 +66,7 @@ Restaurante::InitPratos(iftream pratos)
 };
 
 Restaurante::InitMesa(/*assinatura aqui tbm*/){
-	Vector<Mesa> ativas[6];
+	Vector<Mesa> ativas;
 
 
 

@@ -9,13 +9,13 @@ using namespace std;
 
 class Gerente : public Funcionario{
 private:
-	float salario;
+	string salario;
 public:
 	//construtor e destrutor:
-	Gerente(string nome, string id, float salario);
+	Gerente(string nome, string id, string salario);
 
 	//fuction of class Gerente:
-	float Rsalariog();
+	string Rsalariog();
 };
 
 

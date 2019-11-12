@@ -11,8 +11,8 @@ using namespace std;
 class Pratos{
 private:
 	string nomedoprato;
-	float valordoprato;
-	int qntvendida;
+	string valordoprato;
+	string qntvendida;
 
 public:
 	//construtor e desconstrutor:

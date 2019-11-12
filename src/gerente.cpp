@@ -6,6 +6,6 @@ Gerente::Gerente(string nome, string id, float salario): Funcionario{nome, id} {
 	this->salario = 1,200;
 };
 
-float Gerente::Rsalariog(){
+string Gerente::Rsalariog(){
 	return salario;
 };

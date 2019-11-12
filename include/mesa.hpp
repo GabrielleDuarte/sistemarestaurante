@@ -10,10 +10,10 @@
 
 class Mesa{
 private:
-	int NdeMesa;
+	string NdeMesa;
 public:
 	//constructor do objeto Mesa:
-	Mesa(int NdeMesa);
+	Mesa(string NdeMesa);
 
 
 	//funções do objeto Mesa:

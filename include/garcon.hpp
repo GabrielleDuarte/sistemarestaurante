@@ -9,12 +9,12 @@ using namespace std;
 
 class Garcon : public Funcionario{
 private:
-	float salariog = 900,00
+	string salariog = "900,00"
 public:
-	Garcon(string nome, string id, float salario);
+	Garcon(string nome, string id, string salario);
 
 	//function of class Garcon
-	float Rsalariogar();
+	string Rsalariogar();
 	void IniMesa(int NdeMesa);
 
 	
