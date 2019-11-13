@@ -10,10 +10,12 @@ class Funcionario{
 private:
 	string nome;
 	string id;
+	float salario;
 public:
-	Funcionario(string nome, string id);
-	string Rnome();
-	string Rid();
+	Funcionario(string nome, string id, float salario);
+	string getNome();
+	string getId();
+	float getSalario();
 };
 
 #endif

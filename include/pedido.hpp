@@ -1,29 +1,17 @@
-#ifndef _MESA_H
-#define _MESA_H
+#ifndef _PEDIDO_H
+#define _PEDIDO_H
 
 #include<iostream>
 #include<string>
-//#include<>
+#include<vector>
+#include "pratos.hpp"
 
 //mesa inicializa pedido e envia pra ele os pedidos feitos 
 //mesa tbm envia todos os pedidos para historico para que ele registrar quando os mesmos forem finalizados
 
-class Mesa{
+class Pedido{
 private:
-	string NdeMesa;
-	//Pedido p;
-
-public:
-	//constructor do objeto Mesa:
-	Mesa(string NdeMesa/*, Pedido p*/);
-
-
-	//funções do objeto Mesa:
-	void IniPedido();
-
-
-
+    vector<Pratos> prato_pedido;	
 };
-
 
 #endif

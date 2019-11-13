@@ -5,14 +5,7 @@ definir o que mesa faz:
 */
 #include<iostream>
 #include<string>
-#include"mesa.hpp"
-#include"pedido.hpp"
+#include "pedido.hpp"
 
 
-Mesa::Mesa(string NdeMesa){
-	this->NdeMesa= NdeMesa;
-};
 
-// string Mesa::IniPedido(){
-
-// };

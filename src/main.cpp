@@ -3,11 +3,13 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include "restaurante.hpp"
 
 using namespace std;
 
 int main()
 {
-	Gerente a{"Tadeu", "4L3RT", 0 };
-	cout << a.Rsalariog() << endl;
+	Restaurante ComaBem("ComaBem", "Britney" , "1" , 1200);
+
+	
 }

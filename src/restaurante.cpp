@@ -1,24 +1,10 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-#include <vector>
-#include "pratos.hpp"
-#include "funcionarios.hpp"
-#include "gerente.hpp"
-#include "garcon.hpp"
-#include "mesa.hpp"
-#include "pedido.hpp"
 #include "restaurante.hpp"
 
 using namespace std;
 
-Restaurante::Restaurante(){
-	this->nomedorestaurante = nomedorestaurante;
-}
-
 Restaurante::InitGerente(ifstream ger){
 	//abrindo o arquivo de funcionarios:
-	ger.open("gerente.csv");
+	ger.open("gerente.txt");
 	//testando a abertura do arquivo:
 	if ( !ger.is_open() )
 	{

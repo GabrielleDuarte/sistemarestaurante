@@ -8,14 +8,11 @@
 using namespace std;
 
 class Garcon : public Funcionario{
-private:
-	string salariog = "900,00"
 public:
-	Garcon(string nome, string id, string salario);
+	Garcon(string nome, string id, float salario_garcon);
 
 	//function of class Garcon
-	string Rsalariogar();
 	void IniMesa(int NdeMesa);
-
 	
-}
+};
+#endif

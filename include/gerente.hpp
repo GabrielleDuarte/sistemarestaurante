@@ -8,16 +8,11 @@
 using namespace std;
 
 class Gerente : public Funcionario{
-private:
-	string salario;
 public:
+	Gerente(string nome, string id, float salario_gerente);
 	//construtor e destrutor:
-	Gerente(string nome, string id, string salario);
-
+	//Gerente(string nome, string id, string salario);
 	//fuction of class Gerente:
-	string Rsalariog();
+	
 };
-
-
-
 #endif

@@ -5,24 +5,30 @@
 
 #include <fstream>
 #include <string>
+#include<vector>
 #include "pratos.hpp"
-#include "funcionarios.hpp"
+#include "funcionario.hpp"
 #include "gerente.hpp"
 #include "garcon.hpp"
+#include "historico.hpp"
+#include "mesa.hpp"
 
 //ainda vou criar -> #include "historico.hpp"
 
-class Restaurante : public Funcionarios , public Pratos /*Public historico*/{
+class Restaurante /*Public historico*/{
 private:
-	string nomedorestaurante;
+	string nome_restaurante;
+	Gerente gerente;
+	vector <Garcon> garcons;
+	vector <Pratos> pratos;
+	vector <Mesa> mesa;
 public:
-	Restaurante(string nomedorestaurante);
+	Restaurante(string nomedorestaurante, string nome_gerente, string id_gerente);
 	//não precisa delcarar destrutores.
-
 	// funções de inicialização de funcionario, pratos e historico de vendas diario
 	void InitGerente(ifstream gerente);
 	void InitGarcon(ifstream garcon);	
-	void InitPratos(iftream pratos);
+	void InitPratos(ifstream pratos);
 	//void InitPedido();
 	//void InitMesa();
 	//void InitHistorico(ifstream historico);
