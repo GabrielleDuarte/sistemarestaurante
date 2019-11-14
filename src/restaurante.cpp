@@ -2,66 +2,125 @@
 
 using namespace std;
 
-Restaurante::InitGerente(ifstream ger){
+Restaurante::Restaurante(string nome_restaurante)
+{
+	this->nome_restaurante=nome_restaurante;
+}
+
+void InitGerente(string gerenteFile){
 	//abrindo o arquivo de funcionarios:
-	ger.open("gerente.txt");
+	ifstream gerenteData{gerenteFile};
+	// gerenteData.open(gerenteFile);
 	//testando a abertura do arquivo:
-	if ( !ger.is_open() )
+	if ( !gerenteData.is_open() )
 	{
 		cout << "Erro na abertura do arquivo.\n";
 		exit(1);
 	}
 
 	//vector to salve ger in containers:
-	vector<string> gerentes;
+	
+	 string aux_nome, aux_id, aux_salario;
 
-	while(ger.good())
+	while(gerenteData.good())
 	{
-		string aux;
-		getline(ger, aux , ',');
-		ger.push_back(aux);
+		getline(gerenteData, aux_nome , ',');
+		getline(gerenteData, aux_id , ',');
+		getline(gerenteData, aux_salario , ',');
+		gerenteData>>aux_nome,aux_id, aux_salario;
+		//gerente.push_back(aux);
+		// O FLUXO ESTÁ CORRETO??? FALTA CONSTRUIR O OBJETO
 	}	
+	Gerente gerente_restaurante(aux_nome,aux_id,stof(aux_salario));	
 }
 
 
-Restaurante::InitGarcon(ifstream garcon){
-	garcon.open("gerente.csv");
+// void Restaurante::InitGerente(ifstream gerenteFile){
+// 	//abrindo o arquivo de funcionarios:
+// 	gerenteFile.open("gerente.txt");
+// 	//testando a abertura do arquivo:
+// 	if ( !gerenteFile.is_open() )
+// 	{
+// 		cout << "Erro na abertura do arquivo.\n";
+// 		exit(1);
+// 	}
+
+// 	//vector to salve ger in containers:
+// 	vector<string> gerente;
+	 
+// 	while(gerenteFile.good())
+// 	{
+// 		string aux;
+// 		getline(gerenteFile, aux , ',');
+// 		gerenteFile>>aux;
+// 		gerente.push_back(aux);
+// 		// O FLUXO ESTÁ CORRETO??? FALTA CONSTRUIR O OBJETO
+// 	}	
+// 	Gerente gerente_restaurante(gerente[0], gerente[1],stof (gerente[2]));	
+// }
+
+
+void Restaurante::InitGarcon(ifstream garconFile){
+	garconFile.open("garcon.txt");
 	//testando a abertura do arquivo:
-	if ( !garcon.is_open() )
+	if ( !garconFile.is_open() )
 	{
 		cout << "Erro na abertura do arquivo.\n";
 		exit(1);
 	}
 
 	//vector to salve ger in containers:
-	vector<string> garcon;
+	vector<string> garcons;
 
-	while(garcon.good())
+	while(garconFile.good())
 	{
 		string aux;
-		getline(ger, aux , ',');
-		garcon.push_back(aux);
-	}	
+		getline(garconFile, aux , ',');
+		garconFile>>aux;
+		garcons.push_back(aux);
+	}
+	vector<Garcon> garcons_restaurante; 
+	for(auto i = garcons.begin(); i != garcons.end(); ++i)
+	{
+		garcons_restaurante.set //???????
+	}
+// vetor populado...
 
-};	
 
-Restaurante::InitPratos(iftream pratos)
+}
+
+void Restaurante::InitPratos(ifstream pratoFile)
 {
 	//definir o que acontece aq
+		pratoFile.open("prato.txt");
+	//testando a abertura do arquivo:
+	if ( !pratoFile.is_open() )
+	{
+		cout << "Erro na abertura do arquivo.\n";
+		exit(1);
+	}
 
+	//vector to salve ger in containers:
+	vector<string> pratos;
+
+	while(pratoFile.good())
+	{
+		string aux;
+		getline(pratoFile, aux , ',');
+		pratoFile>>aux;
+		pratos.push_back(aux);
+	}	
+
+}
+
+void Restaurante::InitMesa(ifstream mesa){
+ 	vector<Mesa> ativas;
 };
 
-Restaurante::InitMesa(/*assinatura aqui tbm*/){
-	Vector<Mesa> ativas;
-
-
-
-};
-
-Restaurante::InitPedido(/*assinatura aqui tbm*/){
+// // void Restaurante::InitPedido(/*assinatura aqui tbm*/){
 	
-};
+// // };
 
-Restaurante::InitHistorico(ofstream historico_do_dia, vector<Pedido> pedidos){
+// //void Restaurante::InitHistorico(ofstream historico_do_dia, vector<Pedido> pedidos){
 	
-};
+// };

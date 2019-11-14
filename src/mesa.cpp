@@ -8,10 +8,11 @@ definir o que mesa faz:
 #include"mesa.hpp"
 #include"pedido.hpp"
 
+using namespace std;
 
-Mesa::Mesa(string NdeMesa){
-	this->NdeMesa= NdeMesa;
-};
+Mesa::Mesa(string NdaMesa){
+	this->NdaMesa= NdaMesa;
+}
 
 // string Mesa::IniPedido(){
 
