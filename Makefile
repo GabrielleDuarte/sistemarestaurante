@@ -1,31 +1,7 @@
-### Makefile ###
-
-CC = g++ 
-
-CFLAGS = -pedantic -std=c++11
-
-LDFLAGS = -lm
-
-FONTES = 
-$(wildcard *.cpp)
-
-OBJETOS = 
-$(FONTES:.cpp=.o)
-
-EXECUTAVEL = comanda
-
-all: $(EXECUTAVEL)
-
-$(EXECUTAVEL): $(OBJETOS)
-	$(CC) -o $@ $^ $(LDFLAGS)
-
-%.o: %.cpp
-
-clean:
-	rm -rf *.o
-
-rmproper: clean
-	rm -rf $(EXECUTAVEL)
-
-run: $(EXECUTAVEL)
-	./(EXECUTAVEL)
+executable: objects
+			g++ -pedantic -std=c++11 *.o -o comanda
+			rm *.o
+			@echo "Successful compilation!"
+			
+objects: *.cpp
+		g++ -pedantic -std=c++11 *.cpp
