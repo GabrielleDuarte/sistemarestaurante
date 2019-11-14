@@ -7,14 +7,22 @@ Contribuidores:
 - Matthews Goes
 - Guilherme Lira
 
+Especificação do Problema:
+Sistema de Controle de Comandas (Restaurante)
+
+O objetivo deste projeto é fazer um programa capaz de organizar comandas em um restaurante.Isto implica que, é necessário realizar, editar, ver histórico, e finalizar(pagar) pedidos que nesse caso seria a comanda.
+
+
+
 Funções:
+
 
 - Realizar pedido
 - Editar pedido
 - Cancelar pedido
 - Fazer observações sobre o pedido
 
-(adicionar restantes)
+
 
 
 
