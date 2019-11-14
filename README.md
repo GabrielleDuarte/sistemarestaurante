@@ -21,6 +21,7 @@ Funções:
 - Editar pedido
 - Cancelar pedido
 - Fazer observações sobre o pedido
+- Finalizar(pagar comanda)
 - Ver histórico de pedidos
 
 
