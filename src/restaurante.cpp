@@ -109,6 +109,7 @@ void Restaurante::InitGarcon(string garconFile){
 
 
 
+<<<<<<< HEAD
 
 // 	//definir o que acontece aq
 // 		pratoFile.open("prato.txt");
@@ -118,6 +119,28 @@ void Restaurante::InitGarcon(string garconFile){
 // 		cout << "Erro na abertura do arquivo.\n";
 // 		exit(1);
 // 	}
+=======
+Restaurante::InitPratos(iftream pratos)
+{
+	pratos.open("gerente.csv");
+	//testando a abertura do arquivo:
+	if ( !pratos.is_open() )
+	{
+		cout << "Erro na abertura do arquivo.\n";
+		exit(1);
+	}
+
+	//vector to salve ger in containers:
+	vector<string> pratos;
+
+	while(pratos.good())
+	{
+		string aux;
+		getline(ger, aux , ',');
+		pratos.push_back(aux);
+	}	
+};
+>>>>>>> d879865600283bc067f6f092536a00886fdc3ec5
 
 // 	//vector to salve ger in containers:
 // 	vector<string> pratos;
