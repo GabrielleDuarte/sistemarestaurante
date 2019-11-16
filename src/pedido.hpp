@@ -11,6 +11,7 @@
 
 class Pedido{
 private:
+    
     vector<Pratos> prato_pedido;	
 };
 

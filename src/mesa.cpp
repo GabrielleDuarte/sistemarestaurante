@@ -10,8 +10,8 @@ definir o que mesa faz:
 
 using namespace std;
 
-Mesa::Mesa(string NdaMesa){
-	this->NdaMesa= NdaMesa;
+Mesa::Mesa(string idMesa){
+	this->idMesa= idMesa;
 }
 
 // string Mesa::IniPedido(){

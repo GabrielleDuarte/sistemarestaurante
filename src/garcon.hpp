@@ -9,9 +9,10 @@ using namespace std;
 
 class Garcon : public Funcionario{
 public:
+	Garcon();
 	Garcon(string nome, string id, float salario_garcon);
 
-	//function of class Garcon
+	///function of class Garcon
 	void IniMesa(int NdeMesa);
 	
 };

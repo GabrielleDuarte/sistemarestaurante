@@ -12,12 +12,13 @@ using namespace std;
 
 class Mesa{
 private:
-	string NdaMesa;
+	string idMesa;
 	//vector <Pedido> pedido_mesa;
 
 public:
 	//constructor do objeto Mesa:
-	Mesa(string NdaMesa);
+	Mesa();
+	Mesa(string idMesa);
 
 
 	//funções do objeto Mesa:

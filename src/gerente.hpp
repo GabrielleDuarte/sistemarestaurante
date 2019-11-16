@@ -7,9 +7,10 @@
 
 using namespace std;
 
-class Gerente : public Funcionario{
+class Gerente: public Funcionario{
 public:
-	Gerente(string nome, string id, float salario_gerente);
+	Gerente();
+	Gerente(string nome, string id, float salario);
 	//Gerente(string nome, string id, string salario);
 	//fuction of class Gerente:
 	

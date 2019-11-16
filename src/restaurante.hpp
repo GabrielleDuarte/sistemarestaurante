@@ -22,13 +22,15 @@ private:
 	vector <Garcon> garcons;
 	vector <Pratos> pratos;
 	vector <Mesa> mesa;
+	int quantidade_mesa;
 public:
-	Restaurante(string nome_restaurante);
+	Restaurante();
+	Restaurante(string nome_restaurante, int quantidade_mesa);
 	//não precisa delcarar destrutores.
 	// funções de inicialização de funcionario, pratos e historico de vendas diario
 	void InitGerente(string gerenteFile);
-	void InitGarcon(ifstream garconFile);	
-	void InitPratos(ifstream pratoFile);
+	void InitGarcon(string garconFile);	
+	void InitPratos(string pratoFile);
 	//void InitPedido(ifstream pedidoFile);
 	// void InitMesa(ifstream mesaFile);
 	// void InitHistorico(ifstream historico);

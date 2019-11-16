@@ -9,21 +9,32 @@ Funcionario::Funcionario(string nome, string id, float salario){
 		this->id = id;
 		this->salario = salario;
 }
+string Funcionario::getNome(){
+	return nome;
+}
+string Funcionario::getId(){
+	return id;
+}
+float Funcionario::getSalario(){
+	return salario;
+}
 
 void Funcionario::setNome(string nome_funcionario) 
 {
 	nome = nome_funcionario;
 }
 
-void Funcionario::setId(string id)
+void Funcionario::setId(string id_funcionario)
 { 
-	this->id = id;
+	id = id_funcionario;
 }
 
-void Funcionario::setSalario(float salario) 
+void Funcionario::setSalario(float salario_funcionario) 
 {
-	this->salario=salario; 
+	salario=salario_funcionario; 
 }
+
+
 
 
 

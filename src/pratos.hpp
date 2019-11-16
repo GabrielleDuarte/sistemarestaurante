@@ -15,7 +15,8 @@ private:
 	int qnt_vendida;
 
 public:
-	//construtor e desconstrutor:
+	///construtor e desconstrutor:
+	Pratos();
 	Pratos(string nome_prato, string valor_prato, int qnt_vendida);
 
 	//adicionar novo prato -> GERENTE FAZ

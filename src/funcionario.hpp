@@ -12,6 +12,7 @@ private:
 	string id;
 	float salario;
 public:
+	Funcionario();
 	Funcionario(string nome, string id, float salario);
 	string getNome();
 	string getId();

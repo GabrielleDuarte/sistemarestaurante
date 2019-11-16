@@ -1,7 +1,7 @@
 #include "gerente.hpp"
 
-Gerente::Gerente(string nome, string id, float salario)
-:Funcionario(nome, id, salario){}
+
+Gerente::Gerente(string nome, string id, float salario):Funcionario(nome, id, salario){}
 
 // void addGarcon(Garcon g)
 // {
